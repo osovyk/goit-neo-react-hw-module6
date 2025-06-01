@@ -1,5 +1,5 @@
 import { useDispatch } from 'react-redux';
-import { addContact } from '../../store/contactsSlice';
+import { addContact } from '../../redux/contactsSlice';
 import { Box, Button, TextField, Paper } from '@mui/material';
 
 export default function ContactForm() {

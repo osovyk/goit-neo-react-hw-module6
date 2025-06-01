@@ -1,16 +1,16 @@
 import { useDispatch } from 'react-redux';
-import { deleteContact } from '../../store/contactsSlice';
+import { deleteContact } from '../../redux/contactsSlice';
 import { ListItem, ListItemText, Button, Typography } from '@mui/material';
-import { motion } from 'framer-motion';
+import { motion as MotionDiv } from 'framer-motion';
 
 export default function Contact({ contact }) {
   const dispatch = useDispatch();
 
   return (
-    <motion.div
-      initial={{ opacity: 0, scale: 0.95 }}
+    <MotionDiv
+      initial={{ opacity: 0, scale: 0.9 }}
       animate={{ opacity: 1, scale: 1 }}
-      exit={{ opacity: 0, scale: 0.95 }}
+      exit={{ opacity: 0, scale: 0.9 }}
       transition={{ duration: 0.3 }}
     >
       <ListItem
@@ -52,6 +52,6 @@ export default function Contact({ contact }) {
           }
         />
       </ListItem>
-    </motion.div>
+    </MotionDiv>
   );
 }

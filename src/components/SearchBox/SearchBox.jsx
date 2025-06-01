@@ -1,5 +1,5 @@
 import { useDispatch, useSelector } from 'react-redux';
-import { changeFilter } from '../../store/filtersSlice';
+import { changeFilter } from '../../redux/filtersSlice';
 import { TextField, Box } from '@mui/material';
 
 export default function SearchBox() {
